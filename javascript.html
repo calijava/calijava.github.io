@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Web Portfolio: JavaScript</title>
+		<link type="text/css" rel="stylesheet" href="_assets/css/mystyle.css" media="screen">
+		<link rel="shortcut icon" href="_assets/images/favicon.png">
+			<script>
+  				function showAlert() { 
+  					var myText = "Have a nice day whoever is viewing this!";
+    				alert (myText);
+  				}
+  				function updateTime() { 
+
+	// get all parts of the current time
+					var now = new Date();
+					var hours = now.getHours();
+					var minutes = now.getMinutes();
+					var seconds = now.getSeconds();
+
+	// add leading zero's to minutes and seconds
+		if (minutes < 10) { 
+				minutes = '0' + minutes;
+		}
+		if (seconds < 10) { 
+				seconds = '0' + seconds;
+		}				
+
+	// get time of day (am or pm) 
+		if (hours >= 12 && hours < 24) { 
+				var timeOfDay = 'pm';
+		}
+		else { 
+				var timeOfDay = 'am'; 
+		}
+				
+	// convert hours from 24-hour time to 12-hour time
+		if (hours > 12) { 
+				hours = hours - 12;
+		}
+	// join them together into a character string named "currentTime"
+					var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay; 
+					hours = 24;
+					minutes = 7;
+					seconds = 3;    
+    
+    // get the clock div 
+					var myClock = document.getElementById('clock');
+    
+    // write the currentTime string to the clock div
+					myClock.innerHTML = currentTime;
+				}
+			function toggleClock() { 
+	// get the clock 
+			var myClock = document.getElementById('clock');
+  
+	// get the current value of the clock's display property 
+			var displaySetting = myClock.style.display;
+
+	// also get the clock button, so we can change what it says 
+			var clockButton = document.getElementById('clockButton');
+        
+	// now toggle the clock and the button text, depending on current state
+			if (displaySetting == 'block') { 
+	// clock is visible. hide it
+			myClock.style.display = 'none';
+	// change button text
+			clockButton.innerHTML = 'Show clock';
+			}
+	else { 
+	// clock is hidden. show it 
+			myClock.style.display = 'block';
+	// change button text
+			clockButton.innerHTML = 'Hide clock';
+		}
+	}
+			</script>
+	</head>
+
+	<body onload="setInterval('updateTime()',1000)">
+
+		<img src="_assets/images/banner2.png">
+
+		<div id="skipnav">
+			<a href"#main">Skip to main content</a>
+		</div>
+	
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="accessibility.html">Accessibility</a>
+				</li>
+				<li>
+					<a href="usability.html">Usability</a>
+				</li>
+				<li>
+					<a href="graphics.html">Graphics</a>
+				</li>
+				<li>
+					<a href="javascript.html">JavaScript</a>
+				</li>
+				<li>
+					<a href="tools.html">Tools</a>
+				</li>
+				<li>
+					<a href="videos.html">Videos</a>
+				</li>
+			</ul>
+		</nav>
+
+		<button onclick="showAlert()">Show alert</button>
+			
+		<div id="clock">
+		</div>
+
+<div class="content">
+	<div class="post single post-255 page type-page status-publish hentry no-featured-image">
+<!-- /post-header section -->
+		<div class="post-content section-inner">
+			<section class="main-content">
+                <form class="cart" id="cart-hplus">
+    
+                <div class="item">
+                    <h2>Shoes</h2>
+                    	<p>These shoes were removed off of electrical wires. Shoes will be sold at random, so there is no definite way of knowing which pair you will get.</p>
+        
+                    <div class="info">
+                    	<span>Price: $23/each</span>
+                    </div>
+        
+                    <div class="order">
+                    	<label for="txt-q-shoes">Size Needed:</label>
+                   		<input type="number" min="0" id="txt-q-shoes" size="3" placeholder="0">
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <h2>Chips from the Dollar Store</h2>
+                    	<p>Even for this good price, you gotta remember it's from the Dollar Store..</p>
+        
+                    <div class="info">
+                    	<span>Price: $0.40/bag</span>
+                    </div>
+
+
+                    <div id="chips">
+                        <label for="chips">Type of Chips:</label>
+                        <select id="chips">
+                            <option value="">- select -</option>
+                            <option value="PR">Pringles</option>
+                            <option value="RF">Ruffles</option>
+                            <option value="LS">Lays</option>
+                            <option value="TT">Tostitos</option>
+                        </select>        
+                    </div>
+                </div>
+    
+                <div id="summary">
+                    <h2>Confirmation</h2>
+                    
+        
+                    <div class="gm">
+                        <h3>Are you sure you want this purchase?</h3><br>
+
+                        <input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> <label for="r-method-pickup">Yes!</label><br>
+            
+                        <input type="radio" value="usps" name="r_method" id="r-method-usps"> <label for="r-method-usps">No!</label><br>
+            
+                        <input type="radio" value="ups" name="r_method" id="r-method-ups"> <label for="r-method-ups">What is this?</label>
+                    </div>
+
+                    <div class="questions">
+                        <h3>How did you find this page?</h3><br>
+
+                        <input type="checkbox" value="YES" name="c-special-gift" id="c-special-gift"> <label for="c-special-gift">A friend recommended it</label><br>
+            
+                        <input type="checkbox" value="YES" name="c-special-email" id="c-special-email"> <label for="c-special-email">Found it on the internet</label><br>
+            
+                        <input type="checkbox" value="YES" name="c-special-recipes" id="c-special-recipes"> <label for="c-special-recipes">Word of mouth</label>
+                    </div>
+        
+                    <div class="names">
+                       <h3>What is Your Name?</h3><br>
+                        
+                        <textarea name="txt-notes" id="txt-notes" rows="2" placeholder="Type your first and last name here"></textarea>
+                    </div>
+        
+
+            
+                        <div id="results"></div>
+                    </div>
+                </div>
+        
+                </form>
+			</section>
+		</div>
+
+	</body>
+
+</html>
