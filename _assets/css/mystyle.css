@@ -1,0 +1,348 @@
+/* 
+	Color scheme for this website:
+	#9FACAF
+	#656D6F
+	#D9EAEF
+	rbg(229,247,252) background color and paragraph
+	#C2D1D5
+	#6e7275 divs and nav and button
+	background-color: rgb(229,247,252);*/
+ 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+
+body {
+	font-size: 1em;
+	font-weight:normal;
+	font-family: Arial, sans-serif;
+	color: #000000; /*black*/
+	text-align: left;
+	padding: 0px;
+	border: 0cm;
+	line-height: 1;
+	width: 70%;
+	min-width: 720px;
+	margin: 0 auto;
+	background-color: rgb(229,247,252);
+	background-repeat: repeat;
+}
+h1 {
+	font-size: 6em;
+	font-weight: bold;
+	font-family: Impact;
+	color: #6e7275; 
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+h2 {
+	font-size: 4em;
+	font-weight: bold;
+	font-family: Courier, serif;
+	color: #656D6F; 
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+h3 {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: Courier, serif;
+	color: black;
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+
+}
+ol {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: Impact;
+	color: #000000; /*black*/
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+	list-style: ;/*can put none*/
+}
+div {
+	font-size: 1em;
+	font-weight: normal;
+	color: #000000; /*black*/
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+	/*border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;*/
+	/*background-color: #6e7275;*/
+	padding: 1em;
+}
+p {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: Impact;
+	color: #000000; /*black*/
+	text-align: left;
+	margin: 7px;
+	border-width: 5px;
+	border: 5px;
+	border-radius: 15px;
+	padding: 1em;
+	
+}
+li {
+	font-size: 1em;
+	font-weight: normal;
+	font-family: Impact;
+	color: #000000; /*black*/
+	text-align: left;
+	margin-left: 0;
+	margin-right: 0;
+
+}
+ul {
+	 list-style-type: none;
+}
+a {
+	color: #FFFFFF;
+}
+a:hover, a:focus {
+	color: black;
+	background-color: rgb(229,247,252);
+}
+div#skipnav {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+}
+	
+/* table styles*/
+/* for accessibility.html*/
+
+div.learned {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+}
+table {
+	margin: 0 auto; /* this is a trick for centering certain elements */
+	background-color: black;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th,td {
+	background-color: white;
+	color: black;
+	padding: 0.75em;
+	margin: 1.75em;
+}
+caption {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin:0.75em;
+}
+
+/* navigation styles */
+
+nav { 
+	clear: left;
+	padding-top: 0.75em;
+}
+nav ul {
+	list-style-type: none;
+}
+nav ul li {
+	float: left;
+	margin-right: 0.5em;
+}
+nav ul li a {
+	padding: 0.25em 1em;
+	text-decoration: none;
+	background-color: #EBF5FF;
+	color: #4323AE;
+	border: 0px solid black;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	background-color: #6e7275;
+}
+main p {
+	clear: left;
+}
+
+/*elements with ids and classes*/
+
+div#skipnav {
+	width: 10em;
+	text-align: normal;
+	position: relative;
+	right: 12.5%;
+	font-size: 1.2em;
+	font-weight: normal;
+	font-family: Impact;
+}
+div.info {
+	width: 40%;
+	text-align: center;
+	font-size: 1.2em;
+	float: left;
+}
+div#main, div#main p {
+	color: black;
+	background-color: white;
+	font-style: normal;
+}
+div#main p {
+	margin-left: 2em;
+}
+div#main p#overview {
+	/*cancel out the above style for the #overview */
+	margin-left: 1em;
+	font-size: 1.1em;
+}
+p#overview:first-letter {
+	font-family : "Lucida Calligraphy","Monotype Corsiva", cursive;
+	font-weight: bold;
+	font-size: 2em;
+}
+div#main p.temp {
+	font-style:italic;
+}
+#evaluation {
+	font-size: 1em;
+	border-color: #EBF5FF;
+}
+button { 
+    font-size: 1.4em;
+    font-family: Courier, serif;
+    background-color: #6e7275;
+    color: #000000;
+    border: 4px solid black;
+    box-shadow: 4px 4px 4px #999999;
+}
+button:hover, button:focus, button:active { 
+    color: #C2D1D5;
+    background-color: #656D6F;
+    cursor: pointer;
+}
+
+/*This styles what the clock looks like*/
+div#clock {
+	margin: 7px;
+	padding: 1em;
+	border: .25em;
+	font-size: 3.5em;
+	font-family: Impact;
+	font-weight: bold;
+}
+
+/*This styles the Video Player buttons*/
+/*The button feature above controls how the button looks and works*/
+div#myplayer {
+	font-size: ;
+	font-family: ;
+	font-weight: ;
+	width: ;
+	margin: ;
+	box-shadow: 4px 4px 4px ;
+	border: none !important;
+}
+
+/* This styles my JavaScript page*/
+div#clock {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+
+}
+
+
+div.content {
+	background-color: transparent;
+
+}
+div.item {
+
+}
+div.info {
+
+}
+div.order {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+}
+div#chips {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+}
+div#summary {
+
+}
+div.gm {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+}
+div.questions {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+}
+div.names {
+	border: 12px solid;
+	border-radius: 20px;
+	border-color: #6e7275;
+	background-color: #6e7275;
+}
+textarea {
+	font-size: 1.5em;
+}
+
+
+
